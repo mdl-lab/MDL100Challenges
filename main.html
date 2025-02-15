@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究室 100本ノック</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold">研究室 100本ノック</h1>
+            <p class="mt-2">研究室1年目の基礎力を身につけるための課題集</p>
+        </div>
+    </header>
+
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-4 py-3">
+            <ul class="flex space-x-6">
+                <li><a href="#basics" class="text-blue-600 hover:text-blue-800">基礎編</a></li>
+                <li><a href="#programming" class="text-blue-600 hover:text-blue-800">プログラミング編</a></li>
+                <li><a href="#research" class="text-blue-600 hover:text-blue-800">研究スキル編</a></li>
+                <li><a href="#advanced" class="text-blue-600 hover:text-blue-800">発展編</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="basics" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-600">基礎編</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- 課題カード例 -->
+                <div class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm mb-2">課題 #1</span>
+                    <h3 class="font-bold mb-2">Pythonのインストールと環境構築</h3>
+                    <p class="text-gray-600 mb-4">自分のPCにPythonをインストールし、基本的な開発環境を整える</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">推定所要時間: 30分</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">詳細を見る →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm mb-2">課題 #2</span>
+                    <h3 class="font-bold mb-2">GitHubアカウントの作成</h3>
+                    <p class="text-gray-600 mb-4">GitHubアカウントを作成し、基本的な操作を学ぶ</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">推定所要時間: 45分</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">詳細を見る →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programming" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-600">プログラミング編</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm mb-2">課題 #10</span>
+                    <h3 class="font-bold mb-2">データ前処理の基礎</h3>
+                    <p class="text-gray-600 mb-4">Pandasを使用した基本的なデータ前処理を実践する</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">推定所要時間: 60分</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">詳細を見る →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4 pb-2 border-b-2 border-blue-600">研究スキル編</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded shadow hover:shadow-lg transition-shadow">
+                    <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm mb-2">課題 #20</span>
+                    <h3 class="font-bold mb-2">論文の読み方入門</h3>
+                    <p class="text-gray-600 mb-4">研究論文の効率的な読み方と重要ポイントの見つけ方を学ぶ</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">推定所要時間: 90分</span>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">詳細を見る →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 研究室名 All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
