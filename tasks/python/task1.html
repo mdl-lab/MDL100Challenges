@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python基礎 - 課題1: データ処理の基礎</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+<body class="bg-gray-50">
+    <!-- ナビゲーションバー -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="/index.html" class="text-xl font-bold">研究室 100本ノック</a>
+                <div class="space-x-4">
+                    <a href="/tasks/python/index.html" class="hover:text-gray-200">Python基礎</a>
+                    <a href="/index.html" class="hover:text-gray-200">トップに戻る</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 課題ヘッダー -->
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h1 class="text-2xl font-bold mb-4">課題1: 学生成績データ分析システム</h1>
+            <div class="flex space-x-4 mb-4">
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded">Python基礎</span>
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded">推定所要時間: 120分</span>
+            </div>
+        </div>
+
+        <!-- 出題意図 -->
+        <section class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">📌 出題意図</h2>
+            <p class="text-gray-600 mb-4">
+                この課題では、実践的なデータ処理システムの作成を通じて、Pythonの基本的な機能を総合的に学習します。
+                以下の要素の理解と実践が含まれます：
+            </p>
+            <ul class="list-disc list-inside mt-4 space-y-2 text-gray-600">
+                <li>データ構造（辞書、リスト）の適切な選択と操作</li>
+                <li>ファイル入出力とデータフォーマットの処理</li>
+                <li>関数の設計と実装</li>
+                <li>エラーハンドリングと入力検証</li>
+                <li>データの集計と統計処理</li>
+            </ul>
+        </section>
+
+        <!-- 課題内容 -->
+        <section class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">📝 課題内容</h2>
+            
+            <div class="mb-6">
+                <h3 class="font-bold text-lg mb-2">学生成績管理システムの実装</h3>
+                <p class="text-gray-600 mb-4">
+                    以下の機能を持つ成績管理システムを実装してください：
+                </p>
+                <pre><code class="language-python">
+class StudentGradeSystem:
+    def __init__(self):
+        """
+        以下のデータ構造を使用してシステムを初期化します：
+        - 学生データ: {student_id: {'name': str, 'grades': {subject: [scores]}}}
+        """
+        pass
+
+    def load_data(self, filename):
+        """
+        CSVファイルから学生データを読み込みます。
+        ファイルフォーマット：
+        student_id,name,subject,score
+        001,山田太郎,数学,85
+        001,山田太郎,物理,78
+        ...
+        
+        - ファイルが存在しない場合は適切なエラーを返す
+        - データの形式が不正な場合は適切なエラーを返す
+        """
+        pass
+
+    def add_grade(self, student_id, subject, score):
+        """
+        学生の成績を追加します。
+        - student_idが存在しない場合は適切なエラーを返す
+        - scoreが0-100の範囲外の場合は適切なエラーを返す
+        """
+        pass
+
+    def get_student_average(self, student_id):
+        """
+        学生の全科目の平均点を計算します。
+        - 小数点第2位まで計算
+        - 成績が存在しない場合は適切なエラーを返す
+        """
+        pass
+
+    def get_subject_average(self, subject):
+        """
+        指定された科目の全学生の平均点を計算します。
+        - 小数点第2位まで計算
+        - 該当科目のデータが存在しない場合は適切なエラーを返す
+        """
+        pass
+
+    def get_top_students(self, n=3):
+        """
+        全科目の平均点が高い学生上位n人を返します。
+        戻り値: [(student_id, name, average_score)]
+        """
+        pass
+
+    def export_report(self, filename):
+        """
+        全学生の成績レポートをCSVファイルに出力します。
+        出力フォーマット：
+        student_id,name,subject,average_score,max_score,min_score
+        """
+        pass
+</code></pre>
+            </div>
+
+            <div class="mt-6">
+                <h3 class="font-bold text-lg mb-2">要件</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>すべてのメソッドに適切なエラーハンドリングを実装すること</li>
+                    <li>コードの可読性を意識し、適切なコメントを付けること</li>
+                    <li>メモリ使用量を意識した実装を心がけること</li>
+                    <li>テストケースを作成し、各機能の動作を確認すること</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 解説 -->
+        <section class="bg-white rounded-lg shadow-lg p-6 mb-6">
+            <h2 class="text-xl font-bold mb-4">💡 解説</h2>
+            
+            <div class="mb-6">
+                <h3 class="font-bold text-lg mb-2">実装のポイント</h3>
+                <p class="text-gray-600 mb-4">
+                    この課題で特に注目すべき点は以下の通りです：
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>データ構造の選択
+                        <ul class="list-none pl-6 pt-2 space-y-1">
+                            <li>- 辞書を使用することで、学生IDや科目による高速なデータアクセスが可能</li>
+                            <li>- リストを使用することで、スコアの統計処理が容易</li>
+                        </ul>
+                    </li>
+                    <li>エラーハンドリング
+                        <ul class="list-none pl-6 pt-2 space-y-1">
+                            <li>- try-except文を使用した適切な例外処理</li>
+                            <li>- カスタム例外クラスの定義による明確なエラー表現</li>
+                        </ul>
+                    </li>
+                    <li>ファイル操作
+                        <ul class="list-none pl-6 pt-2 space-y-1">
+                            <li>- with文を使用した安全なファイル操作</li>
+                            <li>- CSVモジュールを使用した効率的なデータ処理</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-lg mb-2">発展的な考察</h3>
+                <p class="text-gray-600">
+                    このシステムの実用性を高めるために考えられる拡張：
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li>データベースの導入による永続化</li>
+                    <li>成績の変更履歴の管理</li>
+                    <li>科目ごとの重み付け平均の実装</li>
+                    <li>セメスター単位での成績管理</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ナビゲーションボタン -->
+        <div class="flex justify-between mt-6">
+            <a href="/tasks/python/index.html" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
+                セクション一覧に戻る
+            </a>
+            <a href="/tasks/python/task2.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                次の課題へ →
+            </a>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-6 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 研究室名 All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
